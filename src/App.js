@@ -1,31 +1,18 @@
+import "./App.css";
+import "./components/Header/Header.jsx";
 
-import './App.css';
-import './components/Header/Header.jsx'
-import { Header } from './components/Header/Header.jsx';
-import {Hero} from './components/Hero/Hero.jsx'
-import { About } from './components/About/About.jsx'
-import { Prices } from './components/Prices/Prices.jsx';
-import { Why } from "./components/Why/Why.jsx";
-import { Barbers } from './components/Barbers/Barbers.jsx';
-import { Gallery } from './components/Gallery/Gallery.jsx';
-import { Footer } from "./components/Footer/Footer.jsx";
-import { MobileMenu } from './components/MobileMenu/MobileMenu.jsx';
+import { Route, Routes } from "react-router-dom";
+
+import BarbersPage from "./pages/BarbersPage/BarbersPage.jsx";
+import MainPage from "./pages/MainPage/MainPage.jsx";
 
 function App() {
   return (
-    <div className="App">
-      <Header/>
-      <main>
-        <Hero/>
-        <About/>
-        <Prices/>
-        <Why/>
-        <Barbers/>
-        <Gallery/>
-      </main>
-      <Footer/>
-      <MobileMenu/>
-    </div>
+    <Routes>
+      <Route path="/" element={<MainPage />}>
+        <Route path="/barbers" element={<BarbersPage />} />
+      </Route>
+    </Routes>
   );
 }
 

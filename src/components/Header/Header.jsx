@@ -2,12 +2,17 @@
 import { Container } from "../Container/Container"
 import style from "./Header.module.css"
 
+import { Link } from "react-router-dom"
+
 export const Header = () => {
     return (
         <header className={style.header}>
             <Container>
                 <div className={style.header_wrap}>
                 <ul className={style.menu}>
+                    <li className={style.item} >
+                        <Link className={style.header__link} to="/">Home</Link>
+                    </li>
                     <li className={style.item}>
                         <a className={style.header__link} href="">About</a>
                     </li>
@@ -16,8 +21,7 @@ export const Header = () => {
 
                     </li>
                     <li className={style.item} >
-                        <a className={style.header__link} href="">Barbers</a>
-
+                        <Link className={style.header__link} to="/barbers">Barbers</Link>
                     </li>
                     <li className={style.item}>
                         <a className={style.header__link} href="">Contacts</a>
