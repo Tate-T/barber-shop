@@ -5,14 +5,18 @@ import { Route, Routes } from "react-router-dom";
 
 import BarbersPage from "./pages/BarbersPage/BarbersPage.jsx";
 import MainPage from "./pages/MainPage/MainPage.jsx";
-
+import AboutPage from "./pages/AboutPage/AboutPage.jsx";
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<MainPage />}>
-        <Route path="/barbers" element={<BarbersPage />} />
-      </Route>
+      <Route path="/" element={<MainPage />} />
+
+      <Route path="/barbers" element={<BarbersPage />} />
+      <Route path="/about" element={<AboutPage />} />
+      <Route/>
+      <Route/>
     </Routes>
+
   );
 }
 

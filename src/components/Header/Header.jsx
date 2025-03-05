@@ -14,7 +14,7 @@ export const Header = () => {
                         <Link className={style.header__link} to="/">Home</Link>
                     </li>
                     <li className={style.item}>
-                        <a className={style.header__link} href="">About</a>
+                        <Link className={style.header__link} to="/about">About</Link>
                     </li>
                     <li className={style.item}>
                         <a className={style.header__link} href="">Services and prices</a>

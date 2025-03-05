@@ -1,18 +1,18 @@
 import { Header } from '../../components/Header/Header.jsx';
-import { Barbers } from '../../components/Barbers/Barbers.jsx';
 import { Footer } from "../../components/Footer/Footer.jsx";
 import { Hero } from '../../components/Hero/Hero.jsx';
-function BarbersPage() {
-    return(
+import { About } from '../../components/About/About.jsx';
+function AboutPage() {
+
+    return (
         <>
-            <Header/>
-            <Hero/>
+            <Header />
+            <Hero />
             <main>
-                <Barbers/>
+                <About />
             </main>
-            <Footer/>
+            <Footer />
         </>
     )
 }
-
-export default BarbersPage
+export default AboutPage;

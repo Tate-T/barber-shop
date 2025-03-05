@@ -1,27 +1,31 @@
 
 import { Header } from '../../components/Header/Header.jsx';
-import {Hero} from '../../components/Hero/Hero.jsx'
+import { Hero } from '../../components/Hero/Hero.jsx'
 import { About } from '../../components/About/About.jsx'
 import { Prices } from '../../components/Prices/Prices.jsx';
 import { Why } from "../../components/Why/Why.jsx";
 import { Gallery } from '../../components/Gallery/Gallery.jsx';
 import { Footer } from "../../components/Footer/Footer.jsx";
 import { MobileMenu } from '../../components/MobileMenu/MobileMenu.jsx';
+import {Contacts} from '../../components/Contacts/Contacts.jsx';
+import { Outlet } from 'react-router-dom';
 
 function MainPage() {
-    
+
     return (
         <>
-            <Header/>
+            <Header />
             <main>
-                <Hero/>
-                <About/>
-                <Prices/>
-                <Why/>
-                <Gallery/>
+                    <Hero />
+                    <About />
+                    <Prices />
+                    <Why />
+                    <Gallery />
+
+                    <Contacts/>
             </main>
-            <Footer/>
-            <MobileMenu/>
+            <Footer />
+            <MobileMenu />
         </>
     )
 }

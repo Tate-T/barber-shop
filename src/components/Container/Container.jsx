@@ -9,7 +9,7 @@ export const Container = ({children, test = "apple"}) => {
     
     return (
         <div className={style.container}>
-            {/* <Outlet/> */}
+            <Outlet/>
             {children}
         </div>
     )

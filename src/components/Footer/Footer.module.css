@@ -1,155 +1,20 @@
-.footer {
-    background-color: #111319;
 
-}
-
-.footerBooking {
-    padding: 120px 0;
-    width: 600px;
-}
-
-.footerContacts {
-    background-image: url(../../img/footerBg.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 120px 100px;
-    width: 600px;
-}
-
-.footerTitle {
-    color: #FFF;
-    font-family: Raleway;
-    font-size: 42px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 49px;
-    letter-spacing: 2.1px;
-    margin-bottom: 44px;
-    text-align: left;
-}
-
-.footerInputs {
-    display: flex;
-    gap: 30px;
-    margin-bottom: 44px;
-
-}
-
-.footerInput {
-    outline: none;
-    border: none;
-    background-color: transparent;
-    border-bottom: 1px solid rgba(157, 164, 189, 0.40);
-    ;
-    box-shadow: none;
-    color: white;
-    width: 100%;
-}
-
-.footerButton {
-    color: #FFF;
-    text-align: center;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    letter-spacing: 1.08px;
-    text-transform: uppercase;
-
-    width: 160px;
-    height: 40px;
-    flex-shrink: 0;
-    border-radius: 25px;
-    border: 1px solid #FF6C00;
-    background-color: transparent;
-    margin-top: 44px;
+.footer{
+    margin-top: 52px;
+    margin-bottom: 52px;
 }
 
 /* =========== */
 
-.footerList {
-    margin-bottom: 77px;
+.footerWrap{
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
+    justify-content: space-between;
+    width: 100%;
 }
-
-.footerList li {
-    display: flex;
-    align-items: center;
-}
-
-.footerContact {
-    color: #9DA4BD;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 30px;
-    letter-spacing: 0.36px;
-    text-align: left;
-}
-
-.footerHours {
-    color: rgba(157, 164, 189, 0.60);
-    font-size: 11px;
-    font-weight: 600;
-    line-height: 15px;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-    text-align: left;
-
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-.footerHours::before {
-    content: " ";
-    width: 60px;
-    height: 1px;
-    background-color: #9DA4BD99;
-
-}
-
-.footerDays {
-    color: #9DA4BD;
-    font-size: 18px;
-    line-height: 30px;
-    letter-spacing: 0.36px;
-    text-align: left;
-}
-
-.footerIcons {
-    width: 24px;
-    height: 24px;
-    stroke: #9DA4BD;
-    margin-right: 16px;
-}
-
-/* ======= */
-
-.footerCopyright {
-    padding: 52px 0;
-    background-color: #fff;
-
-}
-
-.footerCopyright p,
-a {
-    font-size: 11px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 15px;
-    letter-spacing: 2.2px;
-}
-
-.footerCopyright p {
-    color: #9DA4BD;
-}
-
 .footerListLinks {
     display: flex;
+    align-items: center;
+
 }
 
 .footerListLinks>li>a {
@@ -173,33 +38,3 @@ a {
     background-color: #303030;
 }
 
-.formInputTitle {
-    color: white;
-    bottom: 23px;
-    left: 0;
-    width: 35px;
-    height: 12px;
-    position: absolute;
-    line-height: 12.26px;
-    opacity: 0;
-    transition: opacity 500ms linear, transform 500ms linear;
-    transform: translateY(23px);
-}
-
-.wrapInput {
-    position: relative;
-}
-.footerInput {
-    opacity: 1;
-}
-.footerInput::placeholder {
-    transition: opacity 500ms linear;
-}
-.footerInput:focus + .formInputTitle{
-    opacity: 1;
-    transform: translateY(0);
-}
-.footerInput:focus::placeholder{
-    opacity: 0;
-
-}
